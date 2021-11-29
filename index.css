@@ -1,0 +1,649 @@
+/*bar chart for the sex distribution*/
+.header {
+  padding: 5px;
+  text-align: center;
+  background: #FFC0CB;
+  color: black;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.graph1 {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(6, 43, 1);
+}
+
+.graph1 section h2 {
+  color: white;
+  text-shadow: 1px 1px 3px #009ffe;
+  text-decoration: underline;
+}
+
+.graph1 section h4 {
+  color: rgb(23, 7, 255);
+  text-shadow: 1px 1px 3px #5dfe00;
+}
+
+.graph1 section .box {
+  position: absolute;
+  top: 500px;
+  left: 500px;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: 300px;
+  background: transparent;
+  border-bottom: 1px solid rgb(179, 245, 236);
+  border-left: 1px solid rgb(179, 245, 240);
+  display: flex;
+}
+
+.graph1 section .box .skill {
+  position: relative;
+  flex: 1;
+  text-align: center;
+}
+
+.graph1 section .box .skill .graph {
+  position: absolute;
+  width: 40px;
+  background: regba(0, 0, 0, 1);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.graph1 section .box .skill .graph::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 0;
+  background: linear-gradient(0deg, #a50000, #fe0037);
+}
+
+.graph1 section .box .skill .graph::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.graph1 section .box .skill .graph .number {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: silver;
+  font-weight: bold;
+}
+
+.graph1 section .box .skill .name {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  background: #001e8a;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+/*bar chart for the sex distribution*/
+
+/*pie chart for number of siblings*/
+.graph2 {
+  padding-top: 450px;
+}
+
+.graph2 h2 {
+  color: white;
+  text-decoration: underline;
+  text-shadow: 1px 1px 3px #7700fe;
+}
+
+.graph2 h4 {
+  color: red;
+  text-shadow: 1px 1px 3px #7700fe;
+}
+
+
+.graph2 .piechart {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: conic-gradient(
+    red 0,
+    red 245.05deg,
+    blue 245.05deg,
+    blue 332.78deg,
+    green 332.78deg,
+    green 344.3deg,
+    pink 344.3deg,
+    pink 360deg
+  );
+  margin-left: 400px;
+  margin-top: 200px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 5px white;
+  font-size: 25px;
+}
+
+#content1 {
+  position: relative;
+  top: 155px;
+  left: 190px;
+  color: cyan;
+}
+
+#content2 {
+  position: relative;
+  top: 110px;
+  left: -55px;
+  color: black;
+}
+
+#content3 {
+  position: relative;
+  top: 115px;
+  left: 0px;
+  color: black;
+  display: block;
+  transform: rotate(70deg);
+}
+
+#content4 {
+  position: relative;
+  top: 80px;
+  left: 12px;
+  color: white;
+  display: block;
+  transform: rotate(77deg);
+}
+
+.guide .red {
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin: 30px;
+  margin-left: 40px;
+  background-color: red;
+}
+
+.guide .red span {
+  position: relative;
+  top: -3px;
+  right: -25px;
+}
+
+.guide .blue {
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin: 30px;
+  margin-left: 40px;
+  background-color: blue;
+}
+
+.guide .blue span {
+  position: relative;
+  top: -3px;
+  right: -25px;
+}
+
+.guide .green {
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin: 30px;
+  margin-left: 40px;
+  background-color: green;
+}
+
+.guide .green span {
+  position: relative;
+  top: -3px;
+  right: -25px;
+}
+
+.guide .pink {
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin: 30px;
+  margin-left: 40px;
+  background-color: pink;
+}
+
+.guide .pink span {
+  position: relative;
+  top: -5px;
+  right: -25px;
+}
+
+.guide {
+  position: absolute;
+  top: 1300px;
+  left: 300px;
+  transform: translate(-50%, -50%);
+}
+
+.guide span {
+  font-size: 20px;
+  color: white;
+}
+/*pie chart for number of siblings*/
+
+/*bar chart for number of parents*/
+.graph3 h2 {
+  color: white;
+  text-decoration: underline;
+  text-shadow: 1px 1px 3px #009ffe;
+}
+
+.graph3 h4 {
+  color: red;
+  text-shadow: 1px 1px 3px #009ffe;
+}
+
+.graph3 p {
+  color: white;
+}
+
+.graph {
+  margin-bottom: 1em;
+  font: normal 100%/150% arial, helvetica, sans-serif;
+}
+
+.graph caption {
+  font: bold 150%/120% arial, helvetica, sans-serif;
+  padding-bottom: 0.33em;
+}
+
+.graph tbody {
+  left: 200px;
+}
+.graph tbody th {
+  text-align: right;
+  color: rgb(177, 162, 206);
+}
+
+@supports (display: grid) {
+  @media (min-width: 32em) {
+    .graph {
+      display: block;
+      width: 600px;
+      height: 300px;
+    }
+
+    .graph caption {
+      display: block;
+    }
+
+    .graph thead {
+      display: none;
+    }
+
+    .graph tbody {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(2em, 1fr));
+      column-gap: 2.5%;
+      align-items: end;
+      height: 100%;
+      margin: 3em 0 1em 2.8em;
+      padding: 0 1em;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+      background: repeating-linear-gradient(
+        180deg,
+        rgba(170, 170, 170, 0.7) 0,
+        rgba(170, 170, 170, 0.7) 1px,
+        transparent 1px,
+        transparent 20%
+      );
+    }
+
+    .graph tbody:before,
+    .graph tbody:after {
+      position: absolute;
+      left: -3.2em;
+      width: 2.8em;
+      text-align: right;
+      font: bold 80%/120% arial, helvetica, sans-serif;
+    }
+
+    .graph tbody:before {
+      content: "1309";
+      top: -0.6em;
+      color: white;
+    }
+
+    .graph tbody:after {
+      content: "0";
+      bottom: -0.6em;
+      color: white;
+    }
+
+    .graph tr {
+      position: relative;
+      display: block;
+    }
+
+    .graph tr:hover {
+      z-index: 999;
+    }
+
+    .graph th,
+    .graph td {
+      display: block;
+      text-align: center;
+    }
+
+    .graph tbody th {
+      position: absolute;
+      top: -3em;
+      left: 0;
+      width: 100%;
+      font-weight: normal;
+      text-align: center;
+      white-space: nowrap;
+      text-indent: 0;
+      transform: rotate(-45deg);
+    }
+
+    .graph tbody th:after {
+      content: "";
+    }
+
+    .graph td {
+      width: 100%;
+      height: 100%;
+      background: blue;
+      border-radius: 0.5em 0.5em 0 0;
+      transition: background 0.5s;
+    }
+
+    .graph tr:hover td {
+      opacity: 0.7;
+    }
+
+    .graph td span {
+      overflow: hidden;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 0;
+      padding: 0.5em 0;
+      margin: -1em 0 0;
+      font: normal 85%/120% arial, helvetica, sans-serif;
+      font-weight: bold;
+      opacity: 0;
+      transition: opacity 0.5s;
+      color: white;
+    }
+
+    .toggleGraph:checked + table td span,
+    .graph tr:hover td span {
+      width: 4em;
+      margin-left: -2em;
+      opacity: 1;
+    }
+/*bar chart for number of parents*/ 
+
+/*semi circle pie chart for port of embarkment*/
+.graph4 h2 {
+  color: white;
+  text-decoration: underline;
+  text-shadow: 1px 1px 3px #009ffe;
+}
+
+.graph4 h4 {
+  color: red;
+  text-shadow: 1px 1px 3px #009ffe;
+}
+
+.graph4 .embarked {
+  margin: 0 ;
+  margin-left: 250px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.graph4 .embarked *,
+.graph4 .embarked::before {
+  box-sizing: border-box;
+}
+.graph4 .embarked {
+  position: relative;
+  width: 360px;
+  height: 180px;
+  overflow: hidden;
+}
+
+.graph4 .embarked::before {
+  position: absolute;
+}
+
+.graph4 .embarked::after {
+  position: absolute;
+}
+ 
+.graph4 .embarked::before {
+  content: '';
+  width: inherit;
+  height: inherit;
+  border: 45px solid rgba(211,211,211,.3);
+  border-bottom: none;
+  border-top-left-radius: 180px;
+  border-top-right-radius: 180px;
+}
+ 
+.graph4 .embarked::after {
+  content: 'port of embarkation';
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.graph4 .embarked li {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border: 45px solid;
+  border-top: none;
+  border-bottom-left-radius: 180px;
+  border-bottom-right-radius: 180px;
+  transform-origin: 50% 0;
+  animation-fill-mode: forwards;
+  animation-duration: .4s;
+  animation-timing-function: linear;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  backface-visibility: hidden;
+}
+ 
+.graph4 .embarked li:nth-child(1) {
+  z-index: 4;
+  border-color: red;
+  animation-name: rotate-one;
+}
+@keyframes rotate-one {
+  100% {
+    transform: rotate(37.13deg);
+  }
+}
+ 
+.graph4 .embarked li:nth-child(2) {
+  z-index: 3;
+  border-color: cyan;
+  animation-name: rotate-two;
+}
+@keyframes rotate-two {
+  0% {
+    transform: rotate(37.13deg);
+  }
+  100% {
+    transform: rotate(162.81deg);
+  }
+}
+ 
+.graph4 .embarked li:nth-child(3) {
+  z-index: 2;
+  border-color: rgb(255, 138, 4);
+  animation-name: rotate-three;
+}
+@keyframes rotate-three {
+  0% {
+    transform: rotate(162.81deg);
+  }
+  100% {
+    transform: rotate(179.73deg);
+  }
+}
+
+.graph4 .embarked li:nth-child(4) {
+  z-index: 1;
+  border-color: yellow;
+  animation-name: rotate-four;
+}
+@keyframes rotate-four {
+  0% {
+    transform: rotate(179.73deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.graph4 .embarked span {
+  position: absolute;
+  font-size: 15px;
+}
+ 
+.graph4 .embarked li:nth-child(1) span {
+  top: 30px;
+  left: 10px;
+  transform: rotate(-37.13deg);
+  color: red;
+}
+ 
+.graph4 .embarked li:nth-child(2) span {
+  top: 90px;
+  left: 40px;
+  transform: rotate(-162.81deg);
+  color: cyan;
+}
+ 
+.graph4 .embarked li:nth-child(3) span {
+  top: 20px;
+  left: 10px;
+  transform: rotate(-179.73deg);
+  color: rgb(255, 138, 4);
+  font-weight: 900;
+  text-shadow: 1px 1px white;
+}
+ 
+.graph4 .embarked li:nth-child(4) span {
+  top: -5px;
+  left: 10px;
+  transform: rotate(-180deg);
+  color: yellow;
+} 
+/*semi circle pie chart for port of embarkment*/
+
+/*Stacked bar chart for people that travel alone and people that travel accompanied*/
+.graph5 h2 {
+  color: white;
+  text-decoration: underline;
+  text-shadow: 1px 1px 3px #009ffe;
+}
+
+.graph5 h3 {
+  color: red;
+  text-shadow: 1px 1px 3px #009ffe;
+}
+
+#Loneliness {
+  border: 2px solid white;
+  border-radius: 5px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.207fr 0.3965fr;
+  width: 50%;
+  height: 60px;
+  text-align: center;
+  font-size: 40px;
+  margin-left: 150px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+#Alone {
+  background: #48bb78;
+}
+
+#Alone:hover {
+  transition: 0.5s;
+  zoom: 20%;
+}
+
+#Alone:hover #txt1{
+  font-size: 150px;
+  margin-top: -45px;
+  color: purple;
+}
+
+#Alone:hover #text1 {
+  font-size: 120px;
+  margin-top: -160px;
+  color: purple;
+}
+
+#text1 {
+  color: white;
+  margin-top: -15px;
+  margin-left: 125px;
+}
+
+
+ #Accompanied {
+  background: #ecc94b;
+}
+
+#Accompanied:hover {
+  transition: 0.5s;
+  zoom: 20%;
+}
+
+#Accompanied:hover #txt2 {
+  font-size: 150px;
+  margin-top: -45px;
+  color: purple;
+}
+
+#Accompanied:hover #text2 {
+  font-size: 120px;
+  margin-top: -160px;
+  color: purple;
+}
+/*Stacked bar chart for people that travel alone and people that travel accompanied*/

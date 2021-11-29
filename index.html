@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titanic</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Charts Titanic </h1>
+      <p>How it works :</p>
+    </div>
+    <div class="graph1">
+      <section>
+        <h2>Female / Male Distributions of passengers</h2>
+        <h4>This graph shows the number of men and women that can aboard</h4>
+        <div class="box">
+          <div class="skill">
+            <div class="graph" style="height: 35.6%">
+              <div class="number">466</div>
+            </div>
+            <div class="name">female</div>
+          </div>
+          <div class="skill">
+            <div class="graph" style="height: 64.4%">
+              <div class="number">843</div>
+            </div>
+            <div class="name">male</div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="graph2">
+      <h2>Number of siblings</h2>
+      <h4>This graph shows how many siblings each passenger have aboard</h4>
+      <div class="piechart">
+        <span id="content1">68.07%</span>
+        <span id="content2">24.37%</span>
+        <span id="content3">3.21%</span>
+        <span id="content4">4.36%</span>
+      </div>
+      <div class="guide">
+        <div class="red"><span>0</span></div>
+        <div class="blue"><span>1</span></div>
+        <div class="green"><span>2</span></div>
+        <div class="pink"><span>>2</span></div>
+      </div>
+    </div>
+    <div class="graph3">
+      <h2>Number of parents</h2>
+      <h4>This graph shows how many parents each passenger have aboard</h4>
+      <table class="graph">
+        <thead>
+          <tr>
+            <th scope="col">No. of passenger</th>
+            <th scope="col">No. of parents</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="height: 76.55%">
+            <th scope="row">0 par/child</th>
+            <td><span>1002</span></td>
+          </tr>
+          <tr style="height: 12.99%">
+            <th scope="row">1 par/child</th>
+            <td><span>170</span></td>
+          </tr>
+          <tr style="height: 8.63%">
+            <th scope="row">2 par/child</th>
+            <td><span>113</span></td>
+          </tr>
+          <tr style="height: 0.61%">
+            <th scope="row">3 par/child</th>
+            <td><span>8</span></td>
+          </tr>
+          <tr style="height: 0.46%">
+            <th scope="row">4 par/child</th>
+            <td><span>6</span></td>
+          </tr>
+          <tr style="height: 0.46%">
+            <th scope="row">5 par/child</th>
+            <td><span>6</span></td>
+          </tr>
+          <tr style="height: 0.15%">
+            <th scope="row">6 par/child</th>
+            <td><span>2</span></td>
+          </tr>
+          <tr style="height: 0.15%">
+            <th scope="row">9 par/child</th>
+            <td><span>2</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="graph4">
+      <h2>The port of embarkation of passengers</h2>
+      <h4>
+        This graph show the number of passengers from the different port:
+      </h4>
+      <ul class="embarked">
+        <li>
+          <span>Cherbourd (270)</span>
+        </li>
+        <li>
+          <span>Southampton (914)</span>
+        </li>
+        <li>
+          <span>Queenstown (123)</span>
+        </li>
+        <li>
+          <span>N/A (2)</span>
+        </li>
+      </ul>
+    </div>
+    <div class="graph5">
+      <h2>Number of passengers traveling alone</h2>
+      <h3>
+        This graph shows the number of passengers traveling alone 
+      </h3>
+      <div id="Loneliness">
+        <div id="Alone">
+          790
+          <p id="txt1">Traveling alone</p>
+          <p id="text1">60.35%</p>
+        </div>
+        <div id="Accompanied">
+          519
+          <p id="txt2">Accompanied</p>
+          <p id="text2">39.65%</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
